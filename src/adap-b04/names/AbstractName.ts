@@ -168,7 +168,7 @@ export abstract class AbstractName implements Name {
     // @methodtype assertion-method
     public assertIsValidIndex (i: number): void {
         if (i < 0 || i >= this.getNoComponents()) {
-            throw new RangeError("Invalid index value");
+            throw new IllegalArgumentException("Invalid index value");
         }   
     }
 

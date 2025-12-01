@@ -34,8 +34,6 @@ export class StringArrayName extends AbstractName {
 
     // @methodtype get-method
     public getNoComponents(): number {
-        // class invariant is all three pre and postcondition
-        this.assertClassInvariant();
         return this.components.length;
     }
 
