@@ -12,9 +12,13 @@ export class File extends Node {
 
     protected state: FileState = FileState.CLOSED;
 
+    // @methodtype initialization-method
     constructor(baseName: string, parent: Directory) {
+        // Precondition checks are done in the superclass
         super(baseName, parent);
     }
+
+    // Not futher preconditions necessary, postconditions were not required by B04 homework sheet
 
     public open(): void {
         // do something
@@ -29,6 +33,7 @@ export class File extends Node {
         // do something
     }
 
+    // @methodtype get-method
     protected doGetFileState(): FileState {
         return this.state;
     }
